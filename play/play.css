@@ -1,0 +1,16 @@
+body {
+	background-color: #f3f3dd;
+}
+h1 {
+  margin: 6px;
+  font-size: 28px;
+  color: #554;
+}
+audio {
+  margin: 32px auto 0 6px;
+  width: 90%;
+}
+video, object, embed {
+	margin: auto;
+	background-color: #f3f3dd;
+}

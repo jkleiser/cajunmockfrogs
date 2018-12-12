@@ -1,0 +1,108 @@
+body {
+  background-color: #f3f3dd;
+  height: 827px;
+}
+#banner {
+  position: relative;
+  height: 32px;
+  max-width: 770px;
+}
+#banner #logo {
+  position: absolute;
+  left: 260px;
+  z-index: 2;
+}
+#banner #langselect {
+  position: absolute;
+  right: 0px;
+  z-index: 2;
+  font-size: 80%;
+}
+#banner #curlan {
+  font-family: Verdana, sans-serif;
+}
+#banner #langselect a {
+  font-family: Verdana, sans-serif;
+}
+#sidebar {
+  float: left;
+  margin-left: 10px;
+  width: 182px;
+}
+#sidebar div.photo {
+  position: relative;
+}
+#sidebar div.photo img {
+  display: block;
+}
+#sidebar div.photo p {
+  position: absolute;
+  left: -4px;
+  bottom: 3px;
+  margin: 0px;
+  border: 1px solid #aba;
+  border-radius: 1px;
+  padding: 1px 3px 0px 3px;
+  font-family: Verdana, sans-serif;
+  font-size: 80%;
+  color: #222;
+  background-color: #eee;
+  z-index: 2;
+}
+* html #sidebar {
+  display: inline;
+}
+a {
+  text-decoration: none;
+  border-bottom: 1px solid #aae;
+}
+a:active {
+  color: #f00;
+  border-bottom: 1px solid #faa;
+}
+.textBox {
+  margin-top: 12px;
+  margin-left: 204px;
+  max-width: 540px;
+  border: 2px solid #9a9;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 4px 10px 6px 20px;
+  line-height: 140%;
+}
+#mainBox {
+  margin-top: 112px;
+}
+.listHead {
+  position: relative;
+  top: 6px;
+  line-height: 20%;
+}
+ul {
+  list-style-type: circle;
+  padding-left: 1.5em;
+}
+
+@media all and (max-width: 600px) {
+  body {
+    margin: 10px 20px 10px 0px;
+  }
+  #banner {
+    max-width: 570px;
+  }
+  #banner #logo {
+    left: 220px;
+  }
+  #sidebar {
+    margin-left: 6px;
+  }
+  #sidebar div.photo p {
+    font-size: 100%;
+  }
+  .textBox {
+    max-width: 500px;
+  }
+  ul {
+    padding-left: 1em;
+  }
+}
