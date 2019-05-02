@@ -73,6 +73,9 @@ a:active {
 #mainBox {
   margin-top: 112px;
 }
+#members {
+  display: none;  /* print only */
+}
 .listHead {
   position: relative;
   top: 6px;
@@ -104,5 +107,32 @@ ul {
   }
   ul {
     padding-left: 1em;
+  }
+}
+
+@media print {
+  body {
+    background: white;
+    height: auto;
+    margin: 10px;
+  }
+  #sidebar, #langselect, #tunes {
+    display: none;
+  }
+  .textBox {
+    margin-left: 2cm;
+    max-width: 80%;
+    padding: 0.6em 1em 0.3em 2em;
+    font-size: 16pt;
+  }
+  .textBox ul {
+    font-size: 15pt;
+  }
+  #members {
+    display: block;
+  }
+  a {
+    color: black;
+    border-bottom: none;
   }
 }
