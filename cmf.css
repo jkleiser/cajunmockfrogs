@@ -73,7 +73,7 @@ a:active {
 #mainBox {
   margin-top: 112px;
 }
-#members {
+#members, #docdate {
   display: none;  /* print only */
 }
 .listHead {
@@ -134,5 +134,12 @@ ul {
   a {
     color: black;
     border-bottom: none;
+  }
+  #docdate {
+    display: block;
+    font-size: 12pt;
+    font-style: italic;
+    margin: 1em;
+    text-align: right;
   }
 }
